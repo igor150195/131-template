@@ -1,0 +1,667 @@
+:root {
+    /*-------------- Кнопки --------------*/
+    --btns_ff: var(--font1); 
+    
+    /* Большая кнопка */
+    --btn_lg_p_d: 19px 30px;
+    --btn_lg_fz_d: 16px;
+    --btn_lg_lh_d: 1.125;
+    /* --btn_lg_mh_d: 56px; */
+
+    --btn_lg_p_t: 19px 30px; 
+    --btn_lg_fz_t: 16px;
+    --btn_lg_lh_t: 1.125;
+    /*--btn_lg_mh_d: 56px;*/
+
+    --btn_lg_p_m: 16px 24px;
+    --btn_lg_fz_m: 16px;
+    --btn_lg_lh_m: 1.125;
+    /*--btn_lg_mh_d: 56px;*/
+
+    /* Средняя кнопка */
+    --btn_m_p_d: 15px 30px;
+    --btn_m_fz_d: 16px;
+    --btn_m_lh_d: 1.125;
+
+    --btn_m_p_t: 15px 30px; 
+    --btn_m_fz_t: 16px;
+    --btn_m_lh_t: 1.125;
+
+    --btn_m_p_m: 12px 20px;
+    --btn_m_fz_m: 16px;
+    --btn_m_lh_m: 1.125;
+
+    /* Маленькая кнопка */
+    --btn_sm_p_d: 11px 20px;
+    --btn_sm_fz_d: 15px;
+    --btn_sm_lh_d: 1.2;
+
+    --btn_sm_p_t: 11px 20px; 
+    --btn_sm_fz_t: 15px;
+    --btn_sm_lh_t: 1.2;
+
+    --btn_sm_p_m: 11px 16px;
+    --btn_sm_fz_m: 14px;
+    --btn_sm_lh_m: 1.2;
+
+	/* Кнопка 1 */
+    --btn_1_f_w: var(--font1_700);
+
+    --btn_1_c_d: var(--gr_btn_1_text);             
+    --btn_1_c_h: var(--gr_btn_1_text_h);             
+    --btn_1_c_a: var(--gr_btn_1_text_a);
+
+    --btn_1_bg_d: var(--gr_primary);             
+    --btn_1_bg_h: var(--gr_primary);             
+    --btn_1_bg_a: var(--gr_primary);
+
+    --btn_1_shd_d: none;             
+    --btn_1_shd_h: none;             
+    --btn_1_shd_a: none;
+
+    --btn_1_bd_d: none;             
+    --btn_1_bd_h: none;             
+    --btn_1_bd_a: none;
+	/*-------------------------------------------------*/
+
+
+	/* Кнопка 2 */
+    --btn_2_f_w: var(--font1_700);
+
+    --btn_2_c_d: var(--gr_btn_2_text);             
+    --btn_2_c_h: var(--gr_btn_2_text_h);             
+    --btn_2_c_a: var(--gr_btn_2_text_a);
+
+    --btn_2_bg_d: var(--gr_accent);             
+    --btn_2_bg_h: var(--gr_accent);             
+    --btn_2_bg_a: var(--gr_accent);
+
+    --btn_2_shd_d: none;             
+    --btn_2_shd_h: none;             
+    --btn_2_shd_a: none;
+
+    --btn_2_bd_d: none;             
+    --btn_2_bd_h: none;             
+    --btn_2_bd_a: none;
+	/*-------------------------------------------------*/
+
+
+    /* Кнопка 3 */
+    --btn_3_f_w: var(--font1_700);
+
+    --btn_3_c_d: var(--gr_btn_3_text);             
+    --btn_3_c_h: var(--gr_btn_3_text_h);             
+    --btn_3_c_a: var(--gr_btn_3_text_a);
+
+    --btn_3_bg_d: none;             
+    --btn_3_bg_h: var(--gr_primary_1);             
+    --btn_3_bg_a: var(--gr_primary_2);
+
+    --btn_3_shd_d: inset 0 0 0 1px var(--gr_primary_4);             
+    --btn_3_shd_h: inset 0 0 0 1px var(--gr_primary_4);             
+    --btn_3_shd_a: inset 0 0 0 1px var(--gr_primary_4);
+
+    --btn_3_bd_d: none;             
+    --btn_3_bd_h: none;             
+    --btn_3_bd_a: none;
+	/*-------------------------------------------------*/
+
+    
+	/* Кнопка c иконкой 1 */
+    /* Background  */
+    --icon_btn_1_bg_d: var(--gr_icon_btn_1_bg);             
+    --icon_btn_1_bg_h: var(--gr_icon_btn_1_bg_h);             
+    --icon_btn_1_bg_a: var(--gr_icon_btn_1_bg_a);
+
+    /* Box-shadow */
+    --icon_btn_1_shd_d: 0 0 0 1px var(--gr_icon_btn_1_border);             
+    --icon_btn_1_shd_h: 0 0 0 1px var(--gr_icon_btn_1_border_h);             
+    --icon_btn_1_shd_a: 0 0 0 1px var(--gr_icon_btn_1_border_a);
+
+    /* Border  */
+    --icon_btn_1_bd_d: none;             
+    --icon_btn_1_bd_h: none;             
+    --icon_btn_1_bd_a: none;
+	/*-------------------------------------------------*/
+
+
+    /* Кнопка c иконкой 2 */
+    /* Background  */
+    --icon_btn_2_bg_d: var(--gr_icon_btn_2_bg);             
+    --icon_btn_2_bg_h: var(--gr_icon_btn_2_bg_h);             
+    --icon_btn_2_bg_a: var(--gr_icon_btn_2_bg_a);
+
+    /* Box-shadow */
+    --icon_btn_2_shd_d: none;             
+    --icon_btn_2_shd_h: none;             
+    --icon_btn_2_shd_a: none;
+
+    /* Border  */
+    --icon_btn_2_bd_d: none;             
+    --icon_btn_2_bd_h: none;             
+    --icon_btn_2_bd_a: none;
+	/*-------------------------------------------------*/
+
+
+    /* Кнопка c иконкой 3 */
+    /* Background  */
+    --icon_btn_3_bg_d: var(--gr_icon_btn_3_bg);             
+    --icon_btn_3_bg_h: var(--gr_icon_btn_3_bg_h);             
+    --icon_btn_3_bg_a: var(--gr_icon_btn_3_bg_a);
+
+    /* Box-shadow */
+    --icon_btn_3_shd_d: none;             
+    --icon_btn_3_shd_h: none;             
+    --icon_btn_3_shd_a: none;
+
+    /* Border  */
+    --icon_btn_3_bd_d: none;             
+    --icon_btn_3_bd_h: none;             
+    --icon_btn_3_bd_a: none;
+	/*-------------------------------------------------*/
+
+
+	/* Кнопка купить */
+    /* Font  */
+    --buy_btn_ff: var(--font1); 
+    --buy_btn_f_w: var(--font1_700);
+
+    /* Text color */
+    --buy_btn_c_d: var(--gr_btn_2_text);             
+    --buy_btn_c_h: var(--gr_btn_2_text_h);             
+    --buy_btn_c_a: var(--gr_btn_2_text_a);
+
+    /* Background  */
+    --buy_btn_bg_d: var(--gr_accent);             
+    --buy_btn_bg_h: var(--gr_accent);             
+    --buy_btn_bg_a: var(--gr_accent);
+
+    /* Box-shadow */
+    --buy_btn_shd_d: none;             
+    --buy_btn_shd_h: none;             
+    --buy_btn_shd_a: none;
+
+    /* Border  */
+    --buy_btn_bd_d: none;             
+    --buy_btn_bd_h: none;             
+    --buy_btn_bd_a: none;
+    /*-------------- Кнопки --------------*/
+
+    /*-------------- Формы --------------*/
+	/* Field-title */
+	--field_t_c: var(--on_gr_bg_sec_text_7);
+	--field_t_f: var(--font1_400) 15px/ 1.1 var(--font1);
+    
+
+	/* Field-note */
+	--fitle_n_c: var(--on_gr_bg_sec_text_7);
+	--fitle_n_f: var(--font1_400) 12px/ normal var(--font1);
+
+
+	/* Error-message */
+	--field_e_c: var(--gr_error);
+	--field_e_f: var(--font1_400) 12px/ normal var(--font1);
+
+
+	/* Tpl-anketa-success-note */
+	--form_s_c: var(--on_gr_bg_acc_text);
+	--form_s_f: var(--font2_500) 20px/ normal var(--font2);
+
+
+	/*  Input */
+    --input_p: var(--on_gr_bg_acc_text_7);
+    --input_c_d: var(--on_gr_bg_acc_text);
+    --input_c_h: var(--on_gr_bg_acc_text);
+    --input_c_f: var(--on_gr_bg_acc_text);
+    --input_c_e: var(--on_gr_bg_acc_text);
+
+    --input_bg_d: var(--on_gr_bg_bg_8);
+    --input_bg_h: var(--gr_bg);
+    --input_bg_f: var(--gr_bg);
+    --input_bg_e: var(--gr_error_1);
+
+    --input_shd_d: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --input_shd_h: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --input_shd_f: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --input_shd_e: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--gr_error_15);
+
+    --input_brd_d: none;
+    --input_brd_h: none;
+    --input_brd_f: none;
+    --input_brd_e: none;
+
+
+	/* Select */
+    --select_c_d: var(--on_gr_bg_acc_text_7);
+    --select_c_h: var(--on_gr_bg_acc_text_7);
+    --select_c_f: var(--on_gr_bg_acc_text_7);
+    --select_c_e: var(--on_gr_bg_acc_text_7);
+
+    --select_bg_d: var(--on_gr_bg_bg_8);
+    --select_bg_h: var(--gr_bg);
+    --select_bg_f: var(--gr_bg);
+    --select_bg_e: var(--gr_error_1);
+
+    --select_shd_d: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --select_shd_h: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --select_shd_f: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --select_shd_e: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--gr_error_15);
+
+    --select_brd_d: none;
+    --select_brd_h: none;
+    --select_brd_f: none;
+    --select_brd_e: none;
+
+
+	/* Checkbox */
+    --check_f_d: var(--font1_400) 16px/ 1.25 var(--font1);
+    --check_f_t: var(--font1_400) 16px/ 1.25 var(--font1);
+    --check_f_m: var(--font1_400) 16px/ 1.25 var(--font1);
+
+    --check_c_d: var(--on_gr_bg_acc_text_7);
+    --check_c_h: var(--on_gr_bg_acc_text);
+    --check_c_ch: var(--on_gr_bg_acc_text);
+    --check_c_ch_h: var(--on_gr_bg_acc_text);
+
+    --check_i: var(--on_gr_primary_icon);
+    
+    --check_bg_d: var(--on_gr_bg_bg_8);
+    --check_bg_h: var(--gr_bg);
+    --check_bg_ch: var(--gr_primary);
+    --check_bg_ch_h: var(--gr_primary);
+    
+    --check_shd_d: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --check_shd_h: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --check_shd_ch: none;
+    --check_shd_ch_h: none;
+
+    --check_brd_d: none;
+    --check_brd_h: none;
+    --check_brd_ch: none;
+    --check_brd_ch_h: none; 
+
+
+	/* Radio */
+    --radio_f_d: var(--font1_400) 16px/ 1.25 var(--font1);
+    --radio_f_t: var(--font1_400) 16px/ 1.25 var(--font1);
+    --radio_f_m: var(--font1_400) 16px/ 1.25 var(--font1);
+
+    --radio_c_d: var(--on_gr_bg_acc_text_7);
+    --radio_c_h: var(--on_gr_bg_acc_text);
+    --radio_c_ch: var(--on_gr_bg_acc_text);
+    --radio_c_ch_h: var(--on_gr_bg_acc_text);
+
+    --radio_bg_d: var(--on_gr_bg_bg_8);
+    --radio_bg_h: var(--gr_bg);
+    --radio_bg_ch: var(--gr_bg);
+    --radio_bg_ch_h: var(--gr_bg);
+    
+    --radio_shd_d: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --radio_shd_h: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --radio_shd_ch: inset 0 0 0 7px var(--gr_primary);
+    --radio_shd_ch_h: inset 0 0 0 7px var(--gr_primary);
+
+    --radio_brd_d: none;
+    --radio_brd_h: none;
+    --radio_brd_ch: none;
+    --radio_brd_ch_h: none;
+    /*-------------- Формы --------------*/
+
+    /*-------------- Количество --------------*/
+    --product_amount_w: 110px;
+    --product_amount_r: var(--gr_form_radius);
+
+    --product_amount_bg: var(--on_gr_bg_bg_8);
+    --product_amount_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+
+    --product_amount_btn_h: 44px;
+    --product_amount_btn_w: 32%;
+    
+    --product_amount_input_w: 36%;
+    --product_amount_input_h: 44px;
+    --product_amount_input_lh: 44px;
+
+    --product_amount_input_min_c: var(--on_gr_bg_sec_text_6);
+    --product_amount_input_c: var(--on_gr_bg_acc_text_7);
+	--product_amount_input_c_h: var(--on_gr_bg_acc_text);
+	--product_amount_input_c_f: var(--on_gr_bg_acc_text);
+	--product_amount_input_c_dis: var(--on_gr_disable);
+
+    --product_amount_input_f: 16px;
+    --product_amount_input_ff: var(--font1);
+    --product_amount_input_f_w: var(--font1_400);
+
+    /* .product-amount PLUS */
+    --prod_amount_plus_i: var(--on_gr_bg_icon);
+    --prod_amount_plus_i_h: var(--gr_accent);
+    --prod_amount_plus_i_a:	var(--gr_accent);
+    --prod_amount_plus_i_dis: var(--on_gr_disable);
+
+    /* .product-amount MINUS */
+    --prod_amount_minus_i: var(--on_gr_bg_icon);
+    --prod_amount_minus_i_h: var(--gr_accent);
+    --prod_amount_minus_i_a: var(--gr_accent);
+    --prod_amount_minus_i_dis: var(--on_gr_disable);
+    /*-------------- Количество --------------*/
+
+    /*-------------- Параметры в товаре --------------*/
+    /* Шрифт */
+    --p_opt_t_f: 14px/ 1.1 var(--font1);
+    --p_opt_b_f: 14px/ 1.14 var(--font1);
+
+    /* Цвет шрифта */
+    --p_opt_t_c: var(--on_gr_bg_sec_text_6);
+    --p_opt_b_c: var(--on_gr_bg_sec_text);
+
+    /* Размер допполей с цветом */
+    --p_opt_c_w: 28px;
+    --p_opt_c_h: 28px;
+
+    /* Радиус допполей с цветом */
+    --p_opt_c_r: var(--gr_small_radius);
+
+    --p_opt_img_r: var(--gr_wrap_radius);
+	--p_opt_img_brd: var(--on_gr_bg_border_4);
+	--p_opt_img_brd_a: var(--gr_primary);
+
+    /* Отступы допполей с цветом */
+    --p_opt_c_m: 5px 6px;
+
+    /* Before */
+    --before_p_opt_r: var(--gr_small_radius);
+
+    --before_p_opt_c_bg: none;
+    --before_p_opt_c_bg_sel: none;
+
+    --before_p_opt_c_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --before_p_opt_c_shd_sel: inset 0 0 0 1px var(--on_gr_bg_border_4);
+
+    --before_p_opt_c_brd: none;
+    --before_p_opt_c_brd_sel: none;
+
+    /* After */
+    --after_p_opt_r: var(--gr_btn_radius);
+
+    --after_p_opt_c_bg: none;
+    --after_p_opt_c_bg_sel: none;
+
+    --after_p_opt_c_shd: none;
+    --after_p_opt_c_shd_sel: inset 0 0 0 1px var(--gr_primary_6);
+
+    --after_p_opt_c_brd: none;
+    --after_p_opt_c_brd_sel: none;
+    /*-------------- Параметры в товаре --------------*/
+
+    /*-------------- Параметры в коллекциях --------------*/
+    /* Шрифт */
+    --p_par_t_f: 14px/ 1.1 var(--font1);
+    --p_par_b_f: 14px/ 1.14 var(--font1);
+
+    /* Цвет шрифта */
+    --p_par_t_c: var(--on_gr_bg_sec_text_6);
+    --p_par_b_c: var(--on_gr_bg_sec_text);
+
+    /* Размер допполей с цветом */
+    --p_par_c_w: 28px;
+    --p_par_c_h: 28px;
+
+    /* Радиус допполей с цветом */
+    --p_par_c_r: var(--gr_small_radius);
+
+    --p_par_img_r: var(--gr_wrap_radius);
+	--p_par_img_brd: var(--on_gr_bg_border_4);
+	--p_par_img_brd_a: var(--gr_primary);
+
+    /* Отступы допполей с цветом */
+    --p_par_c_m: 5px 9px;
+
+    /* Before */
+    --before_p_par_r: var(--gr_small_radius);
+    
+    --before_p_par_c_bg: none;
+    --before_p_par_c_bg_sel: none;
+
+    --before_p_par_c_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --before_p_par_c_shd_sel: inset 0 0 0 1px var(--on_gr_bg_border_4);
+
+    --before_p_par_c_brd: none;
+    --before_p_par_c_brd_sel: none;
+
+    /* After */
+    --after_p_par_r: var(--gr_btn_radius);
+
+    --after_p_par_c_bg: none;
+    --after_p_par_c_bg_sel: none;
+
+    --after_p_par_c_shd: none;
+    --after_p_par_c_shd_sel: inset 0 0 0 1px var(--gr_primary_6);
+
+    --after_p_par_c_brd: none;
+    --after_p_par_c_brd_sel: none;
+    /*-------------- Параметры в коллекциях --------------*/
+
+    /*-------------- Параметры в корзине --------------*/
+    /* Шрифт */
+    --cart_p_t_f: 14px/ 1.1 var(--font1);
+    --cart_p_b_f: 14px/ 1.14 var(--font1);
+
+    /* Цвет шрифта */
+	--cart_p_t_c: var(--on_gr_bg_sec_text_6);
+	--cart_p_b_c: var(--on_gr_bg_sec_text);
+
+    /* Размер допполей с цветом */
+	--cart_p_c_w: 28px;
+	--cart_p_c_h: 28px;
+
+	/* Радиус допполей с цветом */
+	--cart_p_c_r: var(--gr_small_radius);
+
+	--cart_p_img_r: var(--gr_wrap_radius);
+	--cart_p_img_brd: var(--gr_primary);
+
+	/* Отступы допполей с цветом */
+	--cart_p_c_m: 0 9px 5px;
+    
+	/* Before */
+    --before_cart_r: var(--gr_small_radius);
+
+    --before_cart_c_bg: none;
+    --before_cart_c_bg_sel: none;
+
+    --before_cart_c_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --before_cart_c_shd_sel: inset 0 0 0 1px var(--on_gr_bg_border_4);
+
+    --before_cart_p_c_brd: none;
+    --before_cart_p_c_brd_sel: none;
+
+	/* After */
+    --after_cart_r: var(--gr_btn_radius);
+
+    --after_cart_p_c_bg: none;
+    --after_cart_p_c_bg_sel: none;
+
+    --after_cart_p_c_shd: none;
+    --after_cart_p_c_shd_sel: inset 0 0 0 1px var(--gr_primary_6);
+
+    --after_cart_p_c_brd: none;
+    --after_cart_p_c_brd_sel: none;
+    /*-------------- Параметры в корзине --------------*/
+
+    /*-------------- Фильтр --------------*/
+    /* Размер допполей с цветом */
+    --filter_c_w: 28px;
+    --filter_c_h: 28px;
+
+    /* Радиус допполей с цветом */
+    --filter_c_r: var(--gr_small_radius);
+
+    /* Отступы допполей с цветом */
+    --filter_c_m: 0 9px 22px;
+
+    --filter_i_brd: 1px solid var(--on_gr_bg_border_4);
+    --filter_t_p: 21px 45px 21px 0;
+    --filter_t_f: var(--font2_500) 15px/ 1.2 var(--font2);
+    --filter_t_c: var(--on_gr_bg_sec_text);
+
+    /* Before */
+    --filter_before_bg: none;
+    --filter_before_bg_sel: none;
+    
+    --filter_before_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --filter_before_shd_sel: none;
+
+    --filter_before_brd: none;
+    --filter_before_brd_sel: none;
+
+    /* After */
+    --filter_after_bg: none;
+    --filter_after_bg_sel: none;
+
+    --filter_after_shd: none;
+    --filter_after_shd_sel: inset 0 0 0 1px var(--gr_primary_6);
+
+    --filter_after_brd: none;
+    --filter_after_brd_sel: none;
+
+    /* .param-val */
+    --param_val_m: 15px 0 0;
+
+    --check_param_i: var(--on_gr_primary_icon);
+    --check_param_f: var(--font1_400) 16px/ 1.25 var(--font1);
+
+    --check_param_w: 28px;
+    --check_param_h: 28px;
+    --check_param_r: var(--gr_checkbox_radius);
+    --check_param_p: 4px 0 4px 40px;
+
+    --check_param_c: var(--on_gr_bg_acc_text_7);
+    --check_param_c_h: var(--on_gr_bg_acc_text);
+    --check_param_c_ch: var(--on_gr_bg_acc_text);
+    --check_param_c_ch_h: var(--on_gr_bg_acc_text);
+
+    --check_param_bg: var(--on_gr_bg_bg_8);
+    --check_param_bg_h: var(--gr_bg);
+    --check_param_bg_ch: var(--gr_primary);
+    --check_param_bg_ch_h: var(--gr_primary);
+
+    --check_param_shd: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --check_param_shd_h: 0 0 0 1px rgba(0,0,0, .0), inset 0 0 0 2px var(--gr_primary);
+    --check_param_shd_ch: none;
+    --check_param_shd_ch_h: none;
+
+    --check_param_brd: none;
+    --check_param_brd_h: none;
+    --check_param_brd_ch: none;
+    --check_param_brd_ch_h: none;
+    /*-------------- Фильтр --------------*/
+
+    /*-------------- Поиск --------------*/
+    /* Размер допполей с цветом */
+    --search_o_c_w: 28px;
+    --search_o_c_h: 28px;
+
+    /* Радиус допполей с цветом */
+    --search_o_c_r: var(--gr_small_radius);
+
+    /* Отступы допполей с цветом */
+    --search_o_c_m: 0 9px 15px;
+
+    --search_o_r_brd: 1px solid var(--on_gr_bg_border_4);
+    --search_o_t_p: 21px 45px 21px 0;
+    --search_o_t_f: var(--font2_500) 15px/ 1.2 var(--font2);
+    --search_o_t_c: var(--on_gr_bg_sec_text);
+
+    /* Before */
+    --before_search_o_c_r: var(--gr_small_radius);
+
+    --before_search_o_c_bg: none;
+    --before_search_o_c_bg_sel: none;
+
+    --before_search_o_c_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+    --before_search_o_c_shd_sel: inset 0 0 0 1px var(--on_gr_bg_border_4);
+
+    --before_search_o_c_brd: none;
+    --before_search_o_c_brd_sel: none;
+
+    /* After */
+    --after_search_o_c_r: var(--gr_inner_radius);
+
+    --after_search_o_c_bg: none;
+    --after_search_o_c_bg_sel: none;
+
+    --after_search_o_c_shd: none;
+    --after_search_o_c_shd_sel: inset 0 0 0 1px var(--gr_primary_6);
+
+    --after_search_o_c_brd: none;
+    --after_search_o_c_brd_sel: none;
+    /*-------------- Поиск --------------*/
+
+    /*-------------- Флаги --------------*/
+    --flag_f: var(--font1_400) 14px/ 1.2 var(--font1);
+    --flag_c: var(--gr_white);
+    --flag_p: 6px 12px 5px;
+    --flag_r: var(--gr_small_radius);
+
+    --new_flag_bg: var(--gr_success);
+    --new_flag_c: var(--on_gr_success);
+
+    --special_flag_bg: var(--gr_attention);
+    --special_flag_c: var(--on_gr_attention);
+
+    --action_flag_c: var(--on_gr_primary_text);
+    --action_flag_bg: var(--gr_primary);
+
+    --amount_flag_f: var(--font1_400) 13px/ 1.2 var(--font1);
+    --amount_flag_p: 5px 12px 4px;
+    --amount_flag_r: var(--gr_small_radius);
+    /*-------------- Флаги --------------*/
+
+    /*-------------- Пагинация --------------*/
+    /* Расположение пагинации */
+    --page_l_a: right;
+
+    --page_l_r: var(--gr_wrap_radius);
+    --page_l_shd: inset 0 0 0 1px var(--on_gr_bg_border_4);
+
+    /* Размеры пагинации */
+    --page_l_n_w: 30px;
+    --page_l_n_h: 30px;
+
+    /* Шрифт пагинации */
+    --page_l_f: var(--font1_400) 14px/ var(--page_l_n_h) var(--font1);
+
+    /* Отступы точек в пагинации */
+    --page_l_d_m: 0 2.5px;
+
+    /* Цифры */
+    --page_l_n_m: 0 2.5px;
+
+    /* Активная страница */
+    --page_l_a_r: var(--gr_small_radius);
+
+    --page_l_a_c: var(--gr_accent);
+    --page_l_a_bg: var(--on_gr_bg_bg);
+    --page_l_a_shd: none;
+    --page_l_a_brd: none;
+
+    --page_l_n_c: var(--on_gr_bg_sec_text);
+    --page_l_n_c_h: var(--gr_accent);
+    --page_l_n_c_a: var(--gr_accent);
+
+    --page_l_n_bg: none;
+    --page_l_n_bg_h: none;
+    --page_l_n_bg_a: none;
+
+    --page_l_n_shd: none;
+    --page_l_n_shd_h: none;
+    --page_l_n_shd_a: none;
+
+    --page_l_n_brd: none;
+    --page_l_n_brd_h: none;
+    --page_l_n_brd_a: none;
+
+    /* Стрелки */
+    --page_l_arr_w: 30px;
+    --page_l_arr_h: 30px;
+    /*-------------- Пагинация --------------*/
+}

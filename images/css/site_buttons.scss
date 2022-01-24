@@ -1,0 +1,493 @@
+@import "css/_site_functions.scss"; 
+@import "css/_site_mixins.scss";
+@import "css/_site_buttons_mixins.scss";
+
+.tns-controls button,
+.tns-nav button,
+.quick-view-trigger,
+.product-quick-view .prev_product_caller,
+.product-quick-view .next_product_caller,
+.gr-favorite-popup .gr-favorite-popup__close,
+.order-info-block .order-info-block__close,
+.timer-block .timer-block__close,
+.product-quick-view .popover-close,
+.product-quick-view2 .popover-close,
+.shop2-product-actions dd .close-desc-action,
+#shop2-alert-ok,
+.shop2-alert-close,
+.coupon-delete,
+.cart-delete-btn,
+.shop2-filter__title-icon,
+.row-title__icon,
+.remodal-close-btn,
+.gr-icon-btn,
+.shop-product-btn,
+button.shop2-btn,
+.tpl-field input[type="file"],
+.gr-field-style input[type="file"],
+input[type="button"].shop2-btn,
+input[type="submit"].shop2-btn,
+a.shop2-btn,
+.shop2-btn,
+.gr-btn {
+    position: relative;
+	z-index: 1;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	height: auto;
+	min-height: auto;
+	padding: 0;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-clip: border-box;
+	transition: var(--transition);
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		opacity: 0;
+		visibility: hidden;
+		transition: var(--transition);
+		background: var(--gr_btn_overlay_15);
+	}
+	
+	&:hover {
+		&:before {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&:active {
+		&:before {
+            opacity: 1;
+			visibility: visible;
+			background: var(--gr_btn_overlay_a_05);
+		}
+	}
+
+	&:active {
+		transition: all .05s linear;
+
+		&:before {
+			transition: all .05s linear;
+		}
+	}
+}
+
+button.shop2-btn,
+input[type="button"].shop2-btn,
+input[type="submit"].shop2-btn,
+a.shop2-btn,
+.shop2-btn,
+.tpl-button,
+a.tpl-button,
+.tpl-field button,
+.tpl-field input[type="file"],
+.tpl-field input[type="submit"],
+.gr-field-style button,
+.gr-field-style input[type="file"],
+.gr-field-style input[type="submit"] {
+	@include gr_btn_1;
+	@include gr_btn_def_d;
+	@include gr_btn_def_t;
+	@include gr_btn_def_m;
+	border-radius: var(--gr_btn_radius);
+
+	&:before {
+		border-radius: var(--gr_btn_radius);
+	}
+}
+
+
+
+.shop2-btn {
+	&.shop2-btn-back {
+		@include gr_btn_3;
+		@include gr_btn_i_l;
+
+		span {
+			padding-left: 20px;
+
+			svg {
+				left: -11px;
+			}
+		}
+	}
+}
+
+#shop2-alert-ok,
+.shop2-alert-close {
+	@include gr_icon_btn_3;
+	@include gr_icon_btn_sm_d;
+	@include gr_icon_btn_sm_t;
+	@include gr_icon_btn_sm_m;
+}
+
+.gr-btn {
+    @include gr_btn_def_d;
+	@include gr_btn_def_t;
+	@include gr_btn_def_m;
+	border-radius: var(--gr_btn_radius);
+
+	&:before {
+		border-radius: var(--gr_btn_radius);
+	}
+
+    &.gr-btn-lg {
+        @include gr_btn_lg_d;
+		@include gr_btn_lg_t;
+		@include gr_btn_lg_m;
+    }
+
+    &.gr-btn-sm {
+        @include gr_btn_sm_d;
+		@include gr_btn_sm_t;
+		@include gr_btn_sm_m;
+    }
+
+    &.gr-btn-1 {
+        @include gr_btn_1;
+
+		&.coupon-btn {
+			@include gr_btn_sm_m;
+		}
+    }
+
+    &.gr-btn-2 {
+        @include gr_btn_2;
+    }
+
+    &.gr-btn-3 {
+        @include gr_btn_3;
+
+		&.active, &.active:hover, &.active:active {
+			color: var(--btn_1_c_h);
+			border: var(--btn_1_bd_h);
+			box-shadow: var(--btn_1_shd_h);
+			background: var(--btn_1_bg_h);
+
+			svg {
+				fill: var(--btn_1_c_h);
+			}
+		}
+    }
+
+	&.gr_btn_i_l {
+		@include gr_btn_i_l;
+	}
+
+	&.gr_btn_i_l_2 {
+		@include gr_btn_i_l_2;
+	}
+
+	&.gr_btn_i_r {
+		@include gr_btn_i_r;
+	}
+	
+	&.gr_btn_i_r_2 {
+		@include gr_btn_i_r_2;
+	}
+}
+
+.shop-product-btn {
+	@include shop_product_btn;
+	@include gr_btn_def_d;
+	@include gr_btn_def_t;
+	@include gr_btn_def_m;
+	border-radius: var(--gr_btn_radius);
+
+	&:before {
+		border-radius: var(--gr_btn_radius);
+	}
+
+	&.type-3 {
+		@include gr_btn_lg_d;
+		@include gr_btn_lg_t;
+		@include gr_btn_lg_m;
+	}
+	&.type-2 {
+		
+	}
+	&.type-1 {
+		@include gr_btn_sm_d;
+		@include gr_btn_sm_t;
+		@include gr_btn_sm_m;
+	}
+
+	span {
+		position: relative;
+		padding-right: 30px;
+
+		svg {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 50%;
+			width: 30px;
+			height: 30px;
+			transform: translateY(-50%);
+			transition: var(--transition);
+		}
+	}
+
+	&.type-1, &.type-2 {
+		
+	}
+
+	&.type-3 {
+		
+	}
+
+	&.buy {
+		span {
+			svg {
+				right: -5px;
+				fill: var(--gr_btn_2_icon);
+			}
+		}
+
+		&:hover {
+			span {
+				svg {
+					fill: var(--gr_btn_2_icon_h);
+				}
+			}
+		}
+
+		&:active {
+			span {
+				svg {
+					fill: var(--gr_btn_2_icon_a);
+				}
+			}
+		}
+	}
+
+	&.onrequest {
+		span {
+			svg {
+				right: -5px;
+				fill: var(--gr_btn_2_icon);
+			}
+		}
+
+		&:hover {
+			span {
+				svg {
+					fill: var(--gr_btn_2_icon_h);
+				}
+			}
+		}
+
+		&:active {
+			span {
+				svg {
+					fill: var(--gr_btn_2_icon_a);
+				}
+			}
+		}
+	}
+
+	&.notavailable {
+		color: var(--on_gr_disable);
+		border: none;
+		box-shadow: none;
+		background: var(--gr_disable);
+		pointer-events: none;
+
+		span {
+			svg {
+				right: -5px;
+				fill: var(--on_gr_disable);
+			}
+		}
+	}
+}
+
+.product-compare {
+	@include product_compare;
+}
+
+.gr-favorite-btn {
+	@include gr_favorite_btn;
+}
+
+.order-info-block__title,
+.gr-shop-print__btn a {
+	@include gr_btn_i_l;
+}
+
+.product-more-btn, .gr-options-more__btn {
+	@include product_more_btn;
+}
+
+
+.gr-icon-btn {
+	@include gr_icon_btn_def_d;
+	@include gr_icon_btn_def_t;
+	@include gr_icon_btn_def_m;
+
+    &.gr-icon-btn-lg {
+        @include gr_icon_btn_lg_d;
+		@include gr_icon_btn_lg_t;
+		@include gr_icon_btn_lg_m;
+    }
+
+    &.gr-icon-btn-sm {
+        @include gr_icon_btn_sm_d;
+		@include gr_icon_btn_sm_t;
+		@include gr_icon_btn_sm_m;
+    }
+
+	&.gr-icon-btn-1 {
+		@include gr_icon_btn_1;
+	}
+	&.gr-icon-btn-2 {
+		@include gr_icon_btn_2;
+	}
+	&.gr-icon-btn-3 {
+		@include gr_icon_btn_3;
+	}
+}
+
+.remodal-close-btn {
+	@include gr_icon_btn_3;
+	@include gr_icon_btn_sm_d;
+	@include gr_icon_btn_sm_t;
+	@include gr_icon_btn_sm_m;
+}
+
+.shop2-product-actions dd .close-desc-action,
+.gr-favorite-popup .gr-favorite-popup__close,
+.order-info-block .order-info-block__close,
+.timer-block .timer-block__close,
+.product-quick-view .popover-close,
+.product-quick-view2 .popover-close {
+	@include gr_icon_btn_3;
+	@include gr_icon_btn_sm_d;
+	@include gr_icon_btn_sm_t;
+	@include gr_icon_btn_sm_m;
+}
+
+.quick-view-trigger {
+	@include gr_icon_btn_2;
+}
+
+.product-list.list .product-item .quick-view-trigger {
+	@include gr_icon_btn_sm_d;
+	@include gr_icon_btn_sm_t;
+	@include gr_icon_btn_sm_m;
+}
+
+.product-quick-view .prev_product_caller,
+.product-quick-view .next_product_caller {
+	margin-top: -30px;
+	@include gr_icon_btn_2;
+}
+
+.coupon-delete,
+.cart-delete-btn {
+	@include gr_icon_btn_3;
+	@include gr_icon_btn_sm_d;
+}
+
+.row-title__icon,
+.shop2-filter__title-icon {
+	@include gr_icon_btn_def_d;
+	@include gr_icon_btn_def_t;
+	@include gr_icon_btn_def_m;
+	@include gr_icon_btn_1;
+}
+
+.gr_btn_i_l:not(.gr-btn) {
+	@include gr_btn_i_l;
+}
+.gr_btn_i_l_2:not(.gr-btn) {
+	@include gr_btn_i_l_2;
+}
+
+.gr_btn_i_r:not(.gr-btn) {
+	@include gr_btn_i_r;
+}
+.gr_btn_i_r_2:not(.gr-btn) {
+	@include gr_btn_i_r_2;
+}
+
+.tns-controls {
+	outline: none;
+
+	button {
+		@include gr_icon_btn_1;
+		@include gr_icon_btn_sm_d;
+	}
+}
+
+.tns-nav {
+	margin: 20px 0 0;
+	outline: none;
+	font-size: 0;
+	text-align: center;
+
+	button {
+		margin: 0 5px;
+		min-height: 8px;
+		height: 8px;
+		width: 8px;
+		border-radius: var(--gr_icon_btn_radius);
+		
+		font-size: 0;
+
+		padding: 0;
+		opacity: 1;
+		visibility: visible;
+
+		border: none;
+		background: var(--on_gr_bg_icon_2);
+		box-shadow: none;
+
+		
+
+		&.tns-nav-active {
+			background: var(--gr_accent);
+
+			&:hover,
+			&:active {
+				background: var(--gr_accent);
+			}
+		}
+
+		&:hover {
+			border: none;
+			box-shadow: none;
+			background: var(--gr_accent);
+		}
+
+		&:active {
+			border: none;
+			box-shadow: none;
+			background: var(--gr_accent);
+		}
+	}
+}
+
+
+// Кнопки магазина
+//----------------------------------------------------------------------------//
+
+.gr-field-style input[type="button"],
+.tpl-field input[type="button"] {
+	@include gr-btn-3;
+}

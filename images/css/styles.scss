@@ -1,0 +1,34 @@
+@charset "utf-8";
+// Plugins
+@import "css/_site_plugins.scss";
+
+@import "global:/s3/makeup/sass/defaults/classes.scss";
+@import "css/_site_functions.scss"; 
+@import "css/_site_mixins.scss";
+@import "global:/s3/makeup/sass/defaults/font-family.scss";
+
+
+// Table-style's
+//----------------------------------------------------------------------------//
+	$tableBorder: 1px solid var(--tableBorder);			/* Цвет границы */
+	$tableThBackground: var(--tableThBackground);		/* Фон заголовка */
+	$tableThColor: var(--tableThColor);					/* Цвет заголовка */
+	$tablePadding: .5em;					  			/* Отступы в ячейке */
+//----------------------------------------------------------------------------//
+
+@import "css/_site_defaults.scss"; /* Дефолтные стили для html документа */
+
+// Design
+
+@import "css/_site_buttons_mixins.scss";
+@import "css/_site_forms_mixins.scss";
+
+// Site
+@import "css/_styles.scss";
+
+@import "css/_site_header.scss"; /* Шапка */
+@import "css/_site_inner_folders.scss"; /* Подкатегории */
+@import "css/_site_footer.scss"; /* Футер */
+
+@import "css/_site_top_timer.scss"; /* Таймер в шапке */
+@import "css/_site_special_timer_popup.scss"; /* Форма «Специальное предложение» */

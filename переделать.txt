@@ -1,0 +1,15 @@
+_thumbs------------
+_pricelist------------
+_simple------------
+_collections------------
+_product_styles------------
+_search_form------------
+_params------------
+_pagelist------------
+_options------------
+_flags------------
+_filter------------
+_cart_params------------
+_amount------------
+
+:+[\t\s]+

@@ -1,0 +1,108 @@
+:root{
+    /*-----Большой-----*/
+    --lg_d_m: 0 -10px;
+    --lg_t_m: 0 -10px;
+    --lg_m_m: 0 -6px;
+
+    --pr_lg_d_m: 0 10px 20px;
+    --pr_lg_t_m: 0 10px 20px;
+    --pr_lg_m_m: 0 6px 20px;
+    
+    --pr_lg_d: calc(50% - 20px);
+    --pr_lg_t: calc(50% - 20px);
+    --pr_lg_tm: calc(50% - 12px);
+    --pr_lg_m: calc(50% - 12px);
+    /*-----Большой-----*/
+
+    /*-----Средний-----*/
+    --md_d_m: 0 -10px;
+    --md_t_m: 0 -10px;
+    --md_m_m: 0 -6px;
+
+    --pr_md_d_m: 0 10px 20px;
+    --pr_md_t_m: 0 10px 20px;
+    --pr_md_m_m: 0 6px 20px;
+
+    --pr_md_d: calc(33.33% - 20px);
+    --pr_md_t: calc(33.33% - 20px);
+    --pr_md_tm: calc(33.33% - 12px);
+    --pr_md_m: calc(50% - 12px);
+    /*-----Средний-----*/
+
+    /*-----Маленький-----*/
+    --sm_d_m: 0 -10px;
+    --sm_t_m: 0 -10px;
+    --sm_m_m: 0 -6px;
+
+    --pr_sm_d_m: 0 10px 20px;
+    --pr_sm_t_m: 0 10px 20px;
+    --pr_sm_m_m: 0 6px 20px;
+
+    --pr_sm_d: calc(25% - 20px);
+    --pr_sm_t: calc(33.33% - 20px);
+    --pr_sm_tm: calc(33.33% - 12px);
+    --pr_sm_m: calc(50% - 12px);
+    /*-----Маленький-----*/
+
+    /*-----Мини-----*/
+    --mini_d_m: 0 -10px;
+    --mini_t_m_lg: 0 -10px;
+    --mini_t_m: 0 -10px;
+    --mini_m_m: 0 -6px;
+
+    --pr_mini_d_m: 0 10px 20px;
+    --pr_mini_t_lg_m: 0 10px 20px;
+    --pr_mini_t_m: 0 10px 20px;
+    --pr_mini_m_m: 0 6px 20px;
+
+    --pr_mini_d: calc(20% - 20px);
+    --pr_mini_t_lg: calc(25% - 20px);
+    --pr_mini_t: calc(33.33% - 20px);
+    --pr_mini_tm: calc(33.33% - 12px);
+    --pr_mini_m: calc(50% - 12px);
+    /*-----Мини-----*/
+
+    --pr_bg: var(--gr_bg); /*-----Фон-----*/
+    --pr_brd: var(--on_gr_bg_border_4); /*-----Цвет рамки-----*/
+    --pr_radius: var(--gr_wrap_radius); /*-----Закругление-----*/
+    --pr_img_radius: var(--gr_inner_radius); /*-----Закругление картинки-----*/
+    --pr_list_img_radius: var(--gr_small_radius); /*-----Закругление картинки в прайсе и корзине-----*/
+
+    /*-----Название товара-----*/
+    --pr_name_f: var(--font2);
+    --pr_name_f_w: var(--font2_500);
+    --pr_name_a_c: var(--on_gr_bg_acc_text);
+    --pr_name_a_brd: transparent;
+    --pr_name_a_brd_h: var(--on_gr_bg_acc_text_5);
+    /*-----Название товара-----*/
+
+    /*-----Производитель-----*/
+    --pr_vendor_a_c: var(--on_gr_bg_link);
+    --pr_vendor_a_brd: transparent;
+    --pr_vendor_a_brd_h: var(--on_gr_bg_link_5);
+    --pr_vendor_f: var(--font1);
+    --pr_vendor_f_w: var(--font1_400);
+    /*-----Производитель-----*/
+
+    /*-----Артикул-----*/
+    --pr_article_c: var(--on_gr_bg_sec_text);
+    --pr_article_f: var(--font1);
+    --pr_article_f_w: var(--font1_400);
+    /*-----Артикул-----*/
+
+    /*-----Анонс-----*/
+    --pr_anonce_c: var(--on_gr_bg_sec_text_8);
+    /*-----Анонс-----*/
+
+    /*-----Цена-----*/
+    --pr_cur_price_c: var(--on_gr_bg_acc_text);
+    --pr_cur_price_f: var(--font2);
+    --pr_cur_price_f_w: var(--font2_700);
+    /*-----Цена-----*/
+
+    /*-----Старая цена-----*/
+    --pr_old_price_c: var(--on_gr_bg_sec_text_6);
+    --pr_old_price_f: var(--font2);
+    --pr_old_price_f_w: var(--font2_500);
+    /*-----Старая цена-----*/
+}

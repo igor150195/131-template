@@ -1,0 +1,119 @@
+// Авторизация
+//----------------------------------------------------------------------------//
+
+.login-form {
+	&__row {
+		margin: 0 0 12px;
+	}
+
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__forgot {
+		order: 1;
+		width: 100%;
+		margin: -6px 0 19px;
+
+		.user-forgot-btn {
+			font-size: 14px;
+			line-height: 1.14;
+			text-decoration: none;
+			transition: var(--transition);
+			border-bottom: 1px solid transparent;
+
+			&:hover {
+				border-bottom-color: var(--on_gr_bg_link_5);
+			}
+		}
+	}
+
+	&__enter {
+		order: 2;
+		margin-right: 10px;
+
+		.user-enter-btn {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+
+	&__reg {
+		order: 3;
+
+		.user-reg-btn {
+			padding-left: 24px;
+			padding-right: 24px;
+		}
+	}
+
+	.user-block {
+
+		&__info {
+			margin-bottom: 10px;
+		}
+
+		&__title {
+			padding: 0 0 3px;
+		}
+
+		&__name {
+			font-size: 18px;
+			line-height: 1.4;
+			font-family: var(--font1);
+			color: var(--on_gr_bg_acc_text);
+			font-weight: var(--font1_500);
+
+			a {
+				text-decoration: none;
+				transition: var(--transition);
+				border-bottom: 1px solid transparent;
+
+				&:hover {
+					border-bottom-color: var(--on_gr_bg_link_5);
+				}
+			}
+		}
+
+		&__settings {
+			margin-bottom: 32px;
+
+			.user-settings-btn {
+				font-size: 14px;
+				line-height: 1.14;
+				text-decoration: none;
+				transition: var(--transition);
+				border-bottom: 1px solid transparent;
+				padding-left: 0;
+    			padding-right: 0;
+
+				&:hover {
+					border-bottom-color: var(--on_gr_bg_link_5);
+				}
+			}
+		}
+
+		&__btns {
+			display: flex;
+			align-items: center;
+		}
+
+		&__orders {
+			margin-right: 10px;
+
+			.user-orders-btn {
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+		}
+
+		&__logout {
+			.user-logout-btn {
+				padding-left: 24px;
+				padding-right: 24px;
+			}
+		}
+	}
+}

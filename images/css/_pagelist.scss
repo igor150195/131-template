@@ -1,0 +1,289 @@
+.lazy-pagelist {
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		@media all and (max-width: 639px) {
+			display: block;
+		}
+	}
+
+	.shop-pagelist {
+		padding: 13px 23px;
+		margin-left: auto;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-radius: var(--page_l_r);
+		box-shadow: var(--page_l_shd);
+
+		@media all and (max-width: 767px) {
+			padding: 10px 16px;
+		}
+		
+		@media all and (max-width: 359px) {
+			padding: 10px;
+		}
+	}
+
+	.lazy-pagelist-btn {
+		margin-right: 20px;
+
+		@media all and (max-width: 767px) {
+			margin-right: 12px;
+		}
+
+		@media all and (max-width: 639px) {
+			margin: 0 0 10px;
+			width: 100%;
+		}
+
+		span {
+			padding-right: 30px;
+
+			svg {
+				right: -5px;
+			}
+		}
+	}
+}
+
+
+.shop-pagelist {
+	text-align: var(--page_l_a);
+
+	@media all and (max-width: 639px) {
+		text-align: center;
+	}
+
+	&__body {
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		list-style: none;
+		align-items: center;
+		display: inline-flex;
+		
+		@media all and (max-width: 639px) {
+			width: 100%;
+		}
+
+		li {
+			text-align: center;
+
+			a {
+				position: relative;
+				text-decoration: none;
+				transition: var(--transition);
+			}
+		}
+
+		.page-num {
+			font: var(--page_l_f);
+			width: var(--page_l_n_w);
+			height: var(--page_l_n_h);
+			margin: var(--page_l_n_m);
+
+			&.active-num {
+				color: var(--page_l_a_c);
+				background: var(--page_l_a_bg);
+				box-shadow: var(--page_l_a_shd);
+				border: var(--page_l_a_brd);
+				border-radius: var(--page_l_a_r);
+			}
+
+			&.page_first, &.page_last {
+				margin: 0;
+				font-size: 0;
+				line-height: 0;
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: var(--page_l_arr_h);
+					width: var(--page_l_arr_w);
+				}
+				
+				svg {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					width: 30px;
+					height: 30px;
+					fill: var(--on_gr_bg_icon);
+					transition: var(--transition);
+					transform: translateY(-50%);
+				}
+
+				&:hover {
+					svg {
+						fill: var(--gr_accent);
+					}
+				}
+
+				&:active {
+					svg {
+						fill: var(--gr_accent);
+					}
+				}
+			}
+
+			&.page_first {
+				order: -1;
+				margin-right: 10px;
+				
+				@media all and (max-width: 359px) {
+					margin-right: 5px;
+				}
+			}
+
+			&.page_last {
+				order: 100;
+				margin-left: 10px;
+				
+				@media all and (max-width: 359px) {
+					margin-left: 5px;
+				}
+			}
+
+			span {
+				display: block;
+			}
+
+			a {
+				display: block;
+				transition: var(--transition);
+				color: var(--page_l_n_c);
+				background: var(--page_l_n_bg);
+				box-shadow: var(--page_l_n_shd);
+				border: var(--page_l_n_brd);
+
+				&:hover {
+					color: var(--page_l_n_c_h);
+					background: var(--page_l_n_bg_h);
+					box-shadow: var(--page_l_n_shd_h);
+					border: var(--page_l_n_brd_h);
+				}
+
+				&:active {
+					color: var(--page_l_n_c_a);
+					background: var(--page_l_n_bg_a);
+					box-shadow: var(--page_l_n_shd_a);
+					border: var(--page_l_n_brd_a);
+				}
+			}
+		}
+
+		.page-dots {
+			font-size: 0;
+			margin: var(--page_l_d_m);
+			
+			@media all and (max-width: 639px) {
+				display: none;
+			}
+			
+			@media all and (max-width: 359px) {
+				width: 20px;
+			}
+
+			span {
+				display: block;
+				
+				@media all and (max-width: 359px) {
+					transform: translateX(-4px);
+				}
+			}
+			
+			svg {
+				fill: var(--page_l_n_c);
+			}
+		}
+
+		.page-prev, .page-next {
+
+			a {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: var(--page_l_arr_h);
+				width: var(--page_l_arr_w);
+				font-size: 0;
+
+				svg {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					width: 30px;
+					height: 30px;
+					fill: var(--on_gr_bg_icon);
+					transition: var(--transition);
+					transform: translateY(-50%);
+				}
+
+				&:hover {
+					svg {
+						fill: var(--gr_accent);
+					}
+				}
+
+				&:active {
+					svg {
+						fill: var(--gr_accent);
+					}
+				}
+			}
+		}
+		
+		.page-prev {
+			
+			@media all and (max-width: 639px) {
+				margin-right: auto;
+			}
+
+			&.not_active {
+
+				a {
+					opacity: .5;
+					pointer-events: none;
+				}
+			}
+
+			a {				
+				&:hover {
+					svg {
+						fill: var(--gr_accent);
+					}
+				}
+
+				&:active {
+					svg {
+						fill: var(--gr_accent);
+					}
+				}
+
+				svg {
+					left: 0;
+					right: auto;
+				}
+			}
+		}
+
+		.page-next {
+			@media all and (max-width: 639px) {
+				margin-left: auto;
+			}
+
+			&.not_active {
+
+				a {
+					opacity: .5;
+					pointer-events: none;
+				}
+			}
+		}
+	}
+}

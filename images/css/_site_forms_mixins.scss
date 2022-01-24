@@ -1,0 +1,148 @@
+//---- Inputs ----//
+@mixin gr_input_lg_d {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 18px 20px;
+}
+@mixin gr_input_lg_t {
+    @media all and (max-width: 1260px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 20px;
+    }
+}
+@mixin gr_input_lg_m {
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 20px;
+    }
+}
+
+
+@mixin gr_input_def_d {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 20px;
+}
+@mixin gr_input_def_t {
+    @media all and (max-width: 1260px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 14px 20px;
+    }
+}
+@mixin gr_input_def_m {
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 13px 20px;
+    }
+}
+
+
+@mixin gr_input_sm_d {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px;
+}
+@mixin gr_input_sm_t {
+    @media all and (max-width: 1260px) {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 12px;
+    }
+}
+@mixin gr_input_sm_m {
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 10px 12px;
+    }
+}
+//---- Inputs ----//
+
+//---- Seleсts ----//
+@mixin gr_select_lg_d {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 50px 20px 20px;
+}
+@mixin gr_select_lg_t {
+    @media all and (max-width: 1260px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 18px 50px 18px 20px;
+    }
+}
+@mixin gr_select_lg_m {
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 50px 16px 20px;
+    }
+}
+
+
+@mixin gr_select_def_d {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 50px 15px 20px;
+}
+@mixin gr_select_def_t {
+    @media all and (max-width: 1260px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 14px 50px 14px 20px;
+    }
+}
+@mixin gr_select_def_m {
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 13px 50px 13px 20px;
+    }
+}
+
+@mixin gr_select_sm_d {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 40px 12px 12px;
+}
+@mixin gr_select_sm_t {
+    @media all and (max-width: 1260px) {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 12px 40px 12px 12px;
+    }
+}
+@mixin gr_select_sm_m {
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 10px 40px 10px 12px;
+    }
+}
+//---- Seleсts ----//
+
+//---- Remodal ----//
+@mixin remodal_b_t {
+    font-size: 26px;
+    line-height: 1.1;
+    font-family: var(--font2);
+    font-weight: var(--font2_500);
+    color: var(--on_gr_bg_acc_text);
+
+    @media all and (max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+@mixin remodal_b_p {
+    padding: 0 0 30px;
+
+    @media all and (max-width: 767px) {
+        padding: 0 0 20px;
+    }
+}
+//---- Remodal ----//
