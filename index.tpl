@@ -94,7 +94,7 @@
 	
 	<div class="site__wrapper">
 
-		{include file="local_site_header.tpl"}
+		{include file="local-site-header.tpl"}
 
 		<div class="site-container">
 			<div class="site-container__inner">
@@ -134,44 +134,44 @@
 		</div> <!-- .site-container -->
 
 		<div class="remodal" data-remodal-id="search-form" role="dialog" data-remodal-options="hashTracking: false">
-        <button data-remodal-action="close" class="remodal-close-btn">
-            <span>
-                {$shop2.my.gr_remodal_close|default:'Закрыть'}
-                <i>
-                	<svg class="gr-svg-icon gr_big_icon">
-	                    <use xlink:href="#icon_shop_close"></use>
-	                </svg>
-	                <svg class="gr-svg-icon">
-	                    <use xlink:href="#icon_shop_close_small"></use>
-	                </svg>
-	                <svg class="gr-svg-icon gr_small_icon">
-	                    <use xlink:href="#icon_shop_close_mini"></use>
-	                </svg>
-                </i>
-            </span>
-        </button>
-		{include file="global:shop2.v2-search-form.tpl"}
-    </div>
-    
-    <div class="remodal" data-remodal-id="login-form" role="dialog" data-remodal-options="hashTracking: false">
-        <button data-remodal-action="close" class="remodal-close-btn">
-            <span>
-                {$shop2.my.gr_remodal_close|default:'Закрыть'}
-                <svg class="gr-svg-icon gr_big_icon">
-                    <use xlink:href="#icon_shop_close"></use>
-                </svg>
-                <svg class="gr-svg-icon">
-                    <use xlink:href="#icon_shop_close_small"></use>
-                </svg>
-                <svg class="gr-svg-icon gr_small_icon">
-                    <use xlink:href="#icon_shop_close_mini"></use>
-                </svg>
-            </span>
-        </button>
-		{include file="global:shop2.v2-login.tpl"}
-    </div>
+			<button data-remodal-action="close" class="remodal-close-btn">
+				<span>
+					{$shop2.my.gr_remodal_close|default:'Закрыть'}
+					<i>
+						<svg class="gr-svg-icon gr_big_icon">
+							<use xlink:href="#icon_shop_close"></use>
+						</svg>
+						<svg class="gr-svg-icon">
+							<use xlink:href="#icon_shop_close_small"></use>
+						</svg>
+						<svg class="gr-svg-icon gr_small_icon">
+							<use xlink:href="#icon_shop_close_mini"></use>
+						</svg>
+					</i>
+				</span>
+			</button>
+			{include file="global:shop2.v2-search-form.tpl"}
+		</div>
+		
+		<div class="remodal" data-remodal-id="login-form" role="dialog" data-remodal-options="hashTracking: false">
+			<button data-remodal-action="close" class="remodal-close-btn">
+				<span>
+					{$shop2.my.gr_remodal_close|default:'Закрыть'}
+					<svg class="gr-svg-icon gr_big_icon">
+						<use xlink:href="#icon_shop_close"></use>
+					</svg>
+					<svg class="gr-svg-icon">
+						<use xlink:href="#icon_shop_close_small"></use>
+					</svg>
+					<svg class="gr-svg-icon gr_small_icon">
+						<use xlink:href="#icon_shop_close_mini"></use>
+					</svg>
+				</span>
+			</button>
+			{include file="global:shop2.v2-login.tpl"}
+		</div>
 
-		{include file="local_site_footer.tpl"}
+		{include file="local-site-footer.tpl"}
 
 	</div> <!-- .site__wrapper -->
 
